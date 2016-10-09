@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
 			LICENSE
 	}
 	s.author = { 'Localz Pty Ltd' => 'info@localz.com' }
-	s.source = { :git => "https://github.com/localz/Spotz-Retail-SDK-iOS.git", 
-				 :tag => "0.0.20" }
+	s.source = { :git => "https://github.com/localz/Spotz-Retail-iOS-SDK.git", 
+				 :tag => s.version }
 	s.requires_arc = true
 
 	s.default_subspec  = 'SpotzRetailSDK'
