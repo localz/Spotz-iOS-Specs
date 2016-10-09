@@ -13,7 +13,8 @@ platform :ios, '8.0'
 project 'testapp'
 
 target 'testapp' do
-	source 'https://github.com/CocoaPods/Specs.git' # (SpotzSDK has Cocoapod dependencies, so include Cocoapods as a source too)
+	# SpotzSDK has Cocoapod dependencies, so include Cocoapods as a source too
+	source 'https://github.com/CocoaPods/Specs.git' 
 	source 'https://github.com/localz/Spotz-iOS-Specs.git'
 
 	pod 'SpotzPushSDK'
