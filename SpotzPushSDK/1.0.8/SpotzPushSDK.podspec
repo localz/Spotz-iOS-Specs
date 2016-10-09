@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 			LICENSE
 	}
 	s.author = { 'Localz Pty Ltd' => 'info@localz.com' }
-	s.source = { :git => "https://github.com/localz/Spotz-Push-SDK-iOS.git", 
+	s.source = { :git => "https://github.com/localz/Spotz-Push-iOS-SDK.git", 
 				 :tag => s.version,
 				 :submodules => true }
 	s.requires_arc = true
