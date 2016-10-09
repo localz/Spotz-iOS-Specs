@@ -1,7 +1,7 @@
 # Spotz-iOS-Specs
 Quick shortcuts for referencing Localz SDK pods in your projects
 
-## How to use
+## Usage
 Inside your podfile include ```https://github.com/localz/Spotz-iOS-Specs.git``` as a source, and ```https://github.com/CocoaPods/Specs.git``` as a source if you are using Cocoapod pods as well.
 Now you can reference Localz pods simply with ```pod 'SpotzSDK'```
 
