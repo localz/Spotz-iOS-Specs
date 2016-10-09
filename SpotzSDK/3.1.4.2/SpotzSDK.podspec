@@ -17,15 +17,11 @@ Pod::Spec.new do |s|
 	s.author = { 'Localz Pty Ltd' => 'info@localz.com' }
 	s.source = { :git => 'https://github.com/localz/Spotz3-iOS-SDK.git',
 				 :tag => s.version }
-	s.requires_arc = true
 	
-	s.default_subspec  = 'SpotzSDK'
-	s.subspec 'SpotzSDK' do |spotzsdk|
-		spotzsdk.requires_arc = true
-		spotzsdk.preserve_paths = 'SpotzSDK.framework'
-		spotzsdk.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
-		spotzsdk.frameworks = 'CoreLocation','SystemConfiguration','Foundation'
-		spotzsdk.vendored_frameworks = 'SpotzSDK/SpotzSDK.framework'
-		spotzsdk.dependency 'YapDatabase/Standard/Core'
-	end
+	s.requires_arc = true
+	s.preserve_paths = 'SpotzSDK.framework'
+	s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
+	s.frameworks = 'CoreLocation','SystemConfiguration','Foundation'
+	s.vendored_frameworks = 'SpotzSDK/SpotzSDK.framework'
+	s.dependency 'YapDatabase/Standard/Core'
 end

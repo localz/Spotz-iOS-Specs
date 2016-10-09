@@ -16,13 +16,9 @@ Pod::Spec.new do |s|
 	s.author = { 'Localz Pty Ltd' => 'info@localz.com' }
 	s.source = { :git => "https://github.com/localz/Spotz-Push-iOS-SDK.git", 
 				 :tag => s.version }
+	
 	s.requires_arc = true
-
-	s.default_subspec  = 'SpotzPushSDK'
-	s.subspec 'SpotzPushSDK' do |pushsdk|
-		pushsdk.requires_arc = true
-		pushsdk.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
-		pushsdk.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreLocation'
-		pushsdk.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
-	end
+	s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
+	s.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreLocation'
+	s.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
 end
