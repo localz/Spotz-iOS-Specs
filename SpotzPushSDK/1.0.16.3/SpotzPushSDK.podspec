@@ -5,8 +5,9 @@ Pod::Spec.new do |s|
 	
 	s.version = "1.0.16.3"
 	s.platform = :ios, "8.0"
+	s.ios.deployment_target = '8.0'
 
-	s.homepage = "http://localz.com"
+	s.homepage = "http://www.localz.com"
 	s.license = {
 		:type => 'Commercial',
 		:text => <<-LICENSE
