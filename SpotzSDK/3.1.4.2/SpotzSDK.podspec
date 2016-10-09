@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
 		spotzsdk.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
 		spotzsdk.frameworks = 'CoreLocation','SystemConfiguration','Foundation'
 		spotzsdk.vendored_frameworks = 'SpotzSDK/SpotzSDK.framework'
-		spotzsdk.dependency = 'YapDatabase/Standard/Core'
+		spotzsdk.dependency 'YapDatabase/Standard/Core'
 	end
 end
