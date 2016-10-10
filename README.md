@@ -14,8 +14,8 @@ project 'testapp'
 
 target 'testapp' do
 	# SpotzSDK has Cocoapod dependencies, so include Cocoapods as a source too
-	source 'https://github.com/CocoaPods/Specs.git' 
-	source 'https://github.com/localz/Spotz-iOS-Specs.git'
+	source 'https://github.com/localz/Spotz-iOS-Specs.git' # this needs to be first
+	source 'https://github.com/CocoaPods/Specs.git'
 
 	pod 'SpotzPushSDK'
 	pod 'SpotzRetailSDK'
