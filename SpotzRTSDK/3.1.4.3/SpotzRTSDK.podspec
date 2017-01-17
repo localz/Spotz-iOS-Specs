@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 	s.preserve_paths = 'SpotzSDK.framework'
 	s.vendored_frameworks = 'SpotzSDK/SpotzSDK.framework'
 	s.requires_arc = true
-	s.source = { :git => 'https://github.com/localz/Spotz3-iOS-SDK.git',:branch=> '3.1.4.3_RT' }
+	s.source = { :git => 'https://github.com/localz/Spotz3-iOS-SDK.git',:tag=> '3.1.4.3_RT' }
 	s.frameworks = 'CoreLocation','SystemConfiguration','Foundation'
 	s.dependency 'YapDatabase/Standard/Core'
 	s.dependency 'Socket.IO-Client-Swift'
