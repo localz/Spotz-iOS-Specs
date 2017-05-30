@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-	s.name	= 'SpotzRTSDK'
+	s.name	= 'SpotzRTDevSDK'
 	s.platform = :ios,'8.0'
 	s.ios.deployment_target = '8.0'
 	s.license = {
