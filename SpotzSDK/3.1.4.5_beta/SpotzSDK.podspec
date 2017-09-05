@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 	s.name = 'SpotzSDK'
 	s.summary = 'iOS library for Localz Platform'
 
-	s.version = '3.1.4.4'
+	s.version = '3.1.4.5_beta'
 	s.platform = :ios,'7.0'
 	s.ios.deployment_target = '7.0'
 	
