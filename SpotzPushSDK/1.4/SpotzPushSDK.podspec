@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
     :tag => s.version }
   s.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreLocation'
 
-  ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
-  ss.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
+  s.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
 
   # s.default_subspecs = 'Standard'
 
