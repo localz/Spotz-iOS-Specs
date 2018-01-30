@@ -17,24 +17,18 @@ Pod::Spec.new do |s|
   s.author = { 'Localz Pty Ltd' => 'info@localz.com' }
   s.source = { :git => "https://github.com/localz/Spotz-Push-iOS-SDK.git", 
          :tag => s.version }
-  
   s.requires_arc = true
-  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreLocation'
-  s.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
 
-  # s.default_subspecs = 'Standard'
-
-  # s.subspec 'Standard' do |ss|
-  #   ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
-  #   ss.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
-  #   ss.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'IS_SPOTZPUSHSDK_APP_EXTENSION=0' }
-  # end
-
-  # s.subspec 'Extension' do |ss|
-  #   ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
-  #   ss.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
-  #   ss.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'IS_SPOTZPUSHSDK_APP_EXTENSION=1' }  
-  # end
-
+  s.default_subspecs = 'Standard'
+  s.subspec 'Standard' do |ss|
+    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
+    ss.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
+    ss.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'IS_SPOTZPUSHSDK_APP_EXTENSION=0' }
+  end
+  s.subspec 'Extension' do |ss|
+    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
+    ss.vendored_frameworks = 'SpotzPushSDK/SpotzPushSDK.framework'
+    ss.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'IS_SPOTZPUSHSDK_APP_EXTENSION=1' }  
+  end
 end
