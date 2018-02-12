@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 	s.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreLocation'
 	s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
-        s.frameworks = 'CoreLocation','SystemConfiguration','Foundation'
 	s.vendored_frameworks = 'LocalzAttendantSDK/LocalzAttendantSDK.framework'
 	s.dependency 'SpotzRTSDK'
 	s.dependency 'SpotzPushSDK'
