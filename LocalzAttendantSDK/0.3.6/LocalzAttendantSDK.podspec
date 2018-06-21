@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 	s.name = "LocalzAttendantSDK"
 	s.summary = "iOS library for LocalzAttendantSDK"
 	
-	s.version = "0.3.5.2"
+	s.version = "0.3.6"
 	s.platform = :ios, "8.0"
 	s.ios.deployment_target = '8.0'
 
