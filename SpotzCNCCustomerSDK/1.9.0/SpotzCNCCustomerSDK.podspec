@@ -23,12 +23,12 @@ Pod::Spec.new do |s|
 	s.swift_version = '4.2'
 	s.requires_arc = true
 	s.xcconfig = { 
-		'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
+		'FRAMEWORK_SEARCH_PATHS' => '$(inherited)',
 		'DEFINES_MODULE' => 'YES',
 		'CLANG_ENABLE_MODULES' => 'YES',
 		'SWIFT_OBJC_INTERFACE_HEADER_NAME' => 'SpotzCNCCustomerSDK-Swift.h'
 	}
-	
+
 	s.frameworks = 'UIKit','Foundation','CoreLocation','CoreBluetooth'
 	s.vendored_frameworks = 'SpotzCNCSDK/SpotzCNCCustomerSDK.framework'
 	s.dependency 'SpotzSDK'
