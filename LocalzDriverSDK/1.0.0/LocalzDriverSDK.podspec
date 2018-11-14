@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 	s.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreLocation'
 	s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
 	s.vendored_frameworks = 'LocalzDriverSDK/LocalzDriverSDK.framework'
-	s.dependency 'SpotzRTSDK', '~> 3.2.6'
+	s.dependency 'SpotzRTSDK', '~> 3.2.8'
 	s.dependency 'SpotzPushSDK'
 	s.dependency 'YapDatabase'
 end
