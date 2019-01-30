@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-	s.name = 'LocalzCoreSDK'
+	s.name = 'LocalzMediaSDK'
 	s.summary = 'LocalzMediaSDK'
 
 	s.version = '1.0.0'
