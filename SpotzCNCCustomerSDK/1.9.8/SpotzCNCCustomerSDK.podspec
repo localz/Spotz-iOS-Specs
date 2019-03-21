@@ -32,5 +32,5 @@ Pod::Spec.new do |s|
 	s.frameworks = 'UIKit','Foundation','CoreLocation','CoreBluetooth'
 	s.vendored_frameworks = 'SpotzCNCSDK/SpotzCNCCustomerSDK.framework'
 	s.dependency 'SpotzSDK'
-	s.dependency 'SpotzPushSDK'
+	#s.dependency 'SpotzPushSDK' LocalzPushSDK is also available
 end
