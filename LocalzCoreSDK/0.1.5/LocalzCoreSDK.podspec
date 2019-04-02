@@ -15,8 +15,7 @@ Pod::Spec.new do |s|
 			LICENSE
 	}
 	s.author = { 'Localz Pty Ltd' => 'info@localz.com' }
-	s.source = { :git => 'https://github.com/localz/Localz-Core-iOS-SDK.git',
-				 :branch => 'Integration' }
+	s.source = { :git => 'https://github.com/localz/Localz-Core-iOS-SDK.git' }
 	
 	s.requires_arc = true
 	s.preserve_paths = 'LocalzCoreSDK.framework'
