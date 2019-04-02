@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 	s.name = 'LocalzCoreSDK'
 	s.summary = 'iOS base library for Localz Platform'
 
-	s.version = '0.1.4'
+	s.version = '0.1.6'
 	s.platform = :ios,'8.0'
 	s.ios.deployment_target = '8.0'
 	
