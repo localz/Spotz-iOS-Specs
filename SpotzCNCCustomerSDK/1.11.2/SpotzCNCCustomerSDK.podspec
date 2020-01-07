@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
 
 	s.frameworks = 'UIKit','Foundation','CoreLocation','CoreBluetooth'
 	s.vendored_frameworks = 'SpotzCNCSDK/SpotzCNCCustomerSDK.framework'
-	s.dependency 'SpotzSDK', '~> 3.2.8.2'
+	s.dependency 'SpotzSDK', '~> 3.2.9'
 	s.dependency 'LocalzPushSDK'
 end
