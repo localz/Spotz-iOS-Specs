@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
 	s.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreLocation'
 	s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
 	s.vendored_frameworks = 'LocalzDriverSDK/LocalzDriverSDK.framework'
-	s.dependency 'SpotzRTSDK', '~> 3.4.5-alpha01'
+	s.dependency 'SpotzRTSDK', '~> 3.4.5-alpha'
 	s.dependency 'LocalzPushSDK'
 end
