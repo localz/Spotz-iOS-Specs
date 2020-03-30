@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
 	s.requires_arc = true
 	s.static_framework = true
-	s.swift_version = '5.1'
+	s.swift_version = '4.0'
 	s.requires_arc = true
 	s.pod_target_xcconfig = { 
 		'FRAMEWORK_SEARCH_PATHS' => '$(inherited)',
