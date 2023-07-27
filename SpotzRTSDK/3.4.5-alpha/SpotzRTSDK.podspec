@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
 	s.source = { :git => 'https://github.com/localz/Spotz-RealTime-iOS-SDK.git', :tag => s.version }
 	s.frameworks = 'CoreLocation','SystemConfiguration','Foundation'
 	s.dependency 'YapDatabase/Standard/Core'
-    s.dependency 'LocalzCoreSDK', '~> 1.1.2-alpha'
+    s.dependency 'LocalzCoreSDK', '~> 1.1.3'
 end
